@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Asynconf 2023 - Tournoi de programmation
+Asynconf est un évènement dédié aux développeurs et aux métiers de l'informatique. Après avoir été organisé à distance les 3 premières années, cette 4e édition se tiendra également en physique les 30 et 31 octobre 2023 à Paris Saclay.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tournoi
+La Banque Populaire se lance dans l'exploration des territoires de l'innovation et du numérique. Grâce à cette initiative, nous sommes en train d'organiser un tournoi de code axé sur le thème de la "Banque de demain". C'est une formidable occasion pour vous de relever le défi et de vous mesurer à d'autres participants sur un projet passionnant.
 
-## Available Scripts
+### Règles
+- Début Lundi 30/10 à 12H30
+- 24H pour faire le projet
+- Aucune inscription requise
 
-In the project directory, you can run:
+### Contexte
+La Green Bank, fondée en 2022, est une institution financière novatrice axée sur la durabilité et l'impact environnemental positif. Son objectif principal est de catalyser des investissements et des initiatives qui favorisent la transition vers une économie verte et durable.
+Répondant à la nécessité croissante de mesurer et de comprendre l'impact environnemental des activités humaines, la Green Bank souhaite lancer un outil de calcul de l'empreinte écologique.
+Cet outil interactif permet aux individus de quantifier leur impact sur l'environnement en termes de consommation d'énergie, d'émissions de gaz à effet de serre et d'utilisation des ressources naturelles.
 
-### `npm start`
+### Objectif 
+Réaliser un simulateur d’emprunt pour l’achat d’une voiture.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Fonctionnement
+![Fonctionnement](https://raw.githubusercontent.com/tempetflamer/Assets/main/event/asynconf2023/sujet_fonctionnement.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Donnnées véhicule
 
-### `npm test`
+![data vehicule](https://raw.githubusercontent.com/tempetflamer/Assets/main/event/asynconf2023/sujet_donnees_vehicule.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Données bancaires
 
-### `npm run build`
+![data bancaires](https://raw.githubusercontent.com/tempetflamer/Assets/main/event/asynconf2023/sujet_donnees_bancaires.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Exemple
+![exemple](https://raw.githubusercontent.com/tempetflamer/Assets/main/event/asynconf2023/sujet_exemple1.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Technologies
+Le choix des technos, langages, framework est libre ainsi que la reutilisation d’anciens codes que vous avez pu produire.
 
-### `npm run eject`
+## Site
+https://asynconf.fr/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Organisateurs
+Cet évenement est propulsé par le youtubeur Graven Développement et la Terrasse Discovery - Banque Populaire Val de France
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## technologie utilisé sur le projet
+Le projet est fait en React avec jsx. Il utilise sass (.scss) pour le style, ainsi que prettierc et eslintrc pour formatter le code et identifier les erreur dans le code. Enfin proptypes pour indiquer/valider les types.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo
+[Lien site demo](https://tournoi.asynconf2023-nlecroq.netlify.app/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installer le projet
+1. Télécharger le projet button `<> Code` > `Download ZIP`.
+2. Extraire le fichier Zip.
+3. Lancer le projet dans ton éditeur de code comme vscode.
+4. Lancer la commande `npm i` dans le terminal.
+5. Démarer le serveur web avec `npm start` pour lancer le projet. 
