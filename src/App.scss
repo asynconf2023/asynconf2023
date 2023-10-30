@@ -1,0 +1,57 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+  }
+}
+h2 {
+  @media (max-width: 767px) {
+    font-size: 1.125rem;
+  }
+}
+
+/* Set */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(222, 229, 229, 0.3);
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+p,
+label {
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,39 @@
+.select-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    text-align: left;
+
+    label {
+        margin-bottom: 0.25rem;
+    }
+
+    select {
+        width: 180px;
+        height: 30px;
+        border: 1px solid #243119;
+        font-size: 18px;
+        color: White;
+        background-color: #80a351;
+        border-radius: 5px;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #243119;
+        }
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #228b22;
+            border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: white;
+            border-radius: 20px;
+            border: 1px solid #243119;
+        }
+    }
+}
