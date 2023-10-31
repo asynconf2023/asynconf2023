@@ -45,7 +45,7 @@ Cet évenement est propulsé par le youtubeur Graven Développement et la Terras
 Le projet est fait en React avec jsx. Il utilise sass (.scss) pour le style, ainsi que prettierc et eslintrc pour formatter le code et identifier les erreur dans le code. Enfin proptypes pour indiquer/valider les types.
 
 ## Demo
-[Lien site demo](https://tournoi.asynconf2023-nlecroq.netlify.app/)
+[Lien site demo](https://tournoi-asynconf2023-nlecroq.netlify.app/)
 
 ## Installer le projet
 1. Télécharger le projet button `<> Code` > `Download ZIP`.
