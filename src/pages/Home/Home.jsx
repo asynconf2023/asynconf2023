@@ -28,6 +28,23 @@ export default function Home() {
     }
   }
 
+  const getEcoClass = (score) => {
+    switch (true) {
+      case score >= 0 && score <= 10:
+        return 'bg--red'
+      case score <= 15:
+        return 'bg--orange'
+      case score <= 25:
+        return 'bg--yellow'
+      case score <= 33:
+        return 'bg--green'
+      case score <= 40:
+        return 'bg--teal'
+      default:
+        return 'bg--error'
+    }
+  }
+
   useEffect(() => {
     setScore(
       parseFloat(selectedVehicle) +
@@ -89,9 +106,18 @@ export default function Home() {
       </div>
 
       <div className="score">
-        <h3>Taux d'emprunt</h3>
-        <div className={'container ' + getRateClass(rate)}>
-          <p>{(rate * 100).toFixed(2)}%</p>
+        <div className="eco">
+          <h3>Score Écologique {<br />} (véhicule)</h3>
+          <div className={'container ' + getEcoClass(score)}>
+            <p>{score}</p>
+          </div>
+        </div>
+
+        <div className="loan">
+          <h3>Taux d'emprunt {<br />} (véhicule + passagers)</h3>
+          <div className={'container ' + getRateClass(rate)}>
+            <p>{(rate * 100).toFixed(2)}%</p>
+          </div>
         </div>
       </div>
     </main>
