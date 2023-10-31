@@ -53,3 +53,6 @@ Le projet est fait en React avec jsx. Il utilise sass (.scss) pour le style, ain
 3. Lancer le projet dans ton éditeur de code comme vscode.
 4. Lancer la commande `npm i` dans le terminal.
 5. Démarer le serveur web avec `npm start` pour lancer le projet. 
+
+## Problème trouvé  dans les données
+Actuellement le jeu d'essai va sur un max de 33 en score, le taux d'emprunt entre 34-40 n'est donc pas accessible.

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Dropdown from '../../components/Dropdown/Dropdown'
-import Layout from '../../components/Layout/Layout'
 import { energy, kilometers, vehicles, years } from '../../data/vehicle'
 import { loanRate, passengers } from '../../data/banking.js'
 
@@ -19,6 +18,16 @@ export default function Home() {
     setStateFunction(e.target.value)
   }
 
+  const getRateClass = (rate) => {
+    if (rate < 0.02) {
+      return 'bg--green'
+    } else if (rate < 0.026) {
+      return 'bg--orange'
+    } else {
+      return 'bg--red'
+    }
+  }
+
   useEffect(() => {
     setScore(
       parseFloat(selectedVehicle) +
@@ -29,19 +38,16 @@ export default function Home() {
   }, [selectedVehicle, selectedEnergy, selectedKilometers, selectedYear])
 
   useEffect(() => {
-    console.log(score)
     if (parseFloat(score) >= 0 && parseFloat(score) <= 40) {
       const calculRate = loanRate.find((item) => {
         return score <= parseFloat(item.score)
       })
-      console.log(calculRate, selectedPassengers, parseFloat(selectedPassengers), parseFloat(calculRate.rate))
       setRate(parseFloat(calculRate.rate) + parseFloat(selectedPassengers))
-      console.log(rate)
     }
   }, [selectedPassengers, score])
 
   return (
-    <Layout className="home">
+    <main className="home">
       <h2>Simulateur d’emprunt pour l’achat d’une voiture</h2>
       <h3>Choix d'un véhicule</h3>
       <div className="simulator">
@@ -82,11 +88,12 @@ export default function Home() {
         />
       </div>
 
-      <section className="score">
-        <div className="container bg--green">
+      <div className="score">
+        <h3>Taux d'emprunt</h3>
+        <div className={'container ' + getRateClass(rate)}>
           <p>{(rate * 100).toFixed(2)}%</p>
         </div>
-      </section>
-    </Layout>
+      </div>
+    </main>
   )
 }

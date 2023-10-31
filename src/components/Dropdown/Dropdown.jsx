@@ -2,6 +2,15 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import './Dropdown.scss'
 
+/**
+ * Select element
+ * @param {*} textLabel - Label for the selection field
+ * @param {*} name - Name of the selection field
+ * @param {*} data - Array of data for the selection field options
+ * @param {*} selectedValue - Selected value of the selection field
+ * @param {*} handleChange - Callback function to update state on change
+ * @returns {JSX.Element} - Return a select element within a select-wrapper container
+ */
 export default function Dropdown({ textLabel, name, data, selectedValue, handleChange }) {
   if (!data[0]) {
     return ''
